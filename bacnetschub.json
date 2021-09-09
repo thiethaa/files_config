@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "aql": {
+        "items.find": {
+          "repo": "docker-local-dev",
+          "path": {
+            "$match": "bacnetschub"
+          },
+          "name": {
+            "$match": "SNAPSHOT_*"
+          },
+          "type": "folder"
+        }
+      },
+      "sortBy": [
+        "created"
+      ],
+      "sortOrder": "desc",
+      "offset": 5
+    }
+  ]
+}
